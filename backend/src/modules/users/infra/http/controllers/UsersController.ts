@@ -21,7 +21,7 @@ export default class UsersController {
       created_at: user.created_at,
       updated_at: user.updated_at,
     };
-    // delete user.password;
+     delete user.password;
 
     return response.json(userWithoutPassword);
   }

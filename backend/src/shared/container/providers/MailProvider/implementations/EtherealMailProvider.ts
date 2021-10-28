@@ -10,7 +10,7 @@ import ISendMailDTO from "../dtos/ISendMailDTO";
 export default class EtherealMailProvider implements IMailProvider {
   private client: Transporter;
 
-  constructor (
+  constructor(
     @inject('MailTemplateProvider')
     private mailTemplateProvider: IMailTemplateProvider,
   ) {
@@ -25,11 +25,15 @@ export default class EtherealMailProvider implements IMailProvider {
         },
       });
       this.client = transporter;
-
     });
 }
 
-  public async sendMail({to, from, subject, templateData}: ISendMailDTO): Promise<void> {
+  public async sendMail({
+    to,
+    from,
+    subject,
+    templateData
+  }: ISendMailDTO): Promise<void> {
     const message = await this.client.sendMail({
       from: {
         name: from?.name || 'Equipe ReisBarber',
