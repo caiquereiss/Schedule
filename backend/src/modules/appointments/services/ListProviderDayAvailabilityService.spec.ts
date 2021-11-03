@@ -14,11 +14,13 @@ beforeEach(() => {
 
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
+      user_id: 'user',
       date: new Date(2021, 9, 29, 14, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
+      user_id: 'user',
       date: new Date(2021, 9, 29, 15, 0, 0),
     });
 
@@ -32,7 +34,6 @@ beforeEach(() => {
       year: 2021,
       month: 10,
     });
-    //console.log(availability)
 
      expect(availability).toEqual(
        expect.arrayContaining([
