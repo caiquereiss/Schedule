@@ -57,7 +57,7 @@ describe('ResetPasswordService', () => {
     ).rejects.toBeInstanceOf(AppError);
 
   });
-  it('shold not be able to reset the password if passed more than 2 hours', async () => {
+  it('shold not be able to reset  password if passed more than 2 hours', async () => {
 
    const { token } = await fakeUserTokensRepository.generate('non-existing-user');
 
