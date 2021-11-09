@@ -31,7 +31,7 @@ class ListProvidersService {
 
       await this.cacheProvider.save(`providers-list:${user_id}`, users);
     }
-      return users;
+      return  users;
     }
 }
 export default ListProvidersService;
