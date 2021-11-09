@@ -66,3 +66,7 @@
 [X] O usuário não pode agendar em um horário já ocupado;
 [X] O usuário não pode agendar em um horário que já passou;
 [X] O usuário não pode agendar servicos consigo mesmo;
+
+
+
+// Validar a respeito do redis e do cache no config
