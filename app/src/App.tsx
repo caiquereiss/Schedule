@@ -1,11 +1,14 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { View, StatusBar } from 'react-native';
+import Feather from 'react-native-vector-icons/Feather';
 
 import { NavigationContainer } from '@react-navigation/native';
 
 import AppProvider from './hooks';
 import Routes from './routes';
+
+Feather.loadFont();
 
 const App: React.FC = () => (
   <NavigationContainer>
