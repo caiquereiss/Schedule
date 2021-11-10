@@ -41,7 +41,7 @@ class ListProviderDayAvailabilityService {
     const hourStart = 8;
     // 10 é a quantidade de atendimentos de 8hrs - 17hrs
     const eachHourArray = Array.from(
-      { length: 10 },
+      { length: 11 },
       (_, index) => index + hourStart
     );
 
