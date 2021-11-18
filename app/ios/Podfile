@@ -31,3 +31,11 @@ target 'appgobarber-tvOS' do
     # Pods for testing
   end
 end
+
+# use_flipper!()
+
+# post_install do |installer|
+#   flipper_post_install(installer)
+
+# end
+

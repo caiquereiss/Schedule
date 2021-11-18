@@ -45,7 +45,7 @@ const SignUP: React.FC = () => {
         addToast({
           type: 'success',
           title: 'Cadastro realizado!',
-          description: 'Você já pode fazer seu logon no Gobarber!',
+          description: 'Você já pode fazer seu logon no ReisBarber!',
         });
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
@@ -67,7 +67,7 @@ const SignUP: React.FC = () => {
       <Background />
       <Content>
         <AnimationContainer>
-          {/* <img src={logoImg} alt="GoBarber" /> */}
+          <img src={logoImg} alt="ReisBarber" />
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Faça seu Cadastro</h1>
             <Input name="name" icon={FiUser} placeholder="Nome" />

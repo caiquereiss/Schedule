@@ -33,6 +33,9 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
+    "@typescript-eslint/camelcase": "off",
+    "import/no-duplicates": "off",
+    "camelcase": "off",
     "no-unused-expressions": "off",
     "import/extensions": [
       "error",
